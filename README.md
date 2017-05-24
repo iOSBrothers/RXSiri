@@ -22,9 +22,9 @@ Siri做完语音识别和语义分析之后，将结构化语音分析结果打�
 IntentsExtension / IntentsUIExtension
 需要使用哪些功能，相应plist配置也要配置相应的权限
 
-> 目前demo:
-- ![srxboys_Siri](https://github.com/srxboys/RXSiri/blob/master/srxboys/RXSiri.png)
+> 目前demo:(全局app 和 Extension 还没有通信)
+- ![srxboys_Siri](https://github.com/iOSBrothers/RXSiri/blob/master/srxboys/RXSiri.png)
 
 > 其中一个:
-- ![srxboys_Siri](https://github.com/srxboys/RXSiri/blob/master/srxboys/sendMessage.png)
+- ![srxboys_Siri](https://github.com/iOSBrothers/RXSiri/blob/master/srxboys/sendMessage.png)
 
