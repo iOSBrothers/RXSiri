@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CC25E0D1ED419A4003136C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC25E0C1ED419A4003136C6 /* main.m */; };
+		6CC25E101ED419A4003136C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC25E0F1ED419A4003136C6 /* AppDelegate.m */; };
+		6CC25E131ED419A4003136C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC25E121ED419A4003136C6 /* ViewController.m */; };
+		6CC25E161ED419A4003136C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CC25E141ED419A4003136C6 /* Main.storyboard */; };
+		6CC25E181ED419A4003136C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CC25E171ED419A4003136C6 /* Assets.xcassets */; };
+		6CC25E1B1ED419A4003136C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CC25E191ED419A4003136C6 /* LaunchScreen.storyboard */; };
+		6CC25E2A1ED41A77003136C6 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC25E291ED41A77003136C6 /* IntentHandler.m */; };
+		6CC25E331ED41A77003136C6 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC25E321ED41A77003136C6 /* IntentsUI.framework */; };
+		6CC25E371ED41A77003136C6 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC25E361ED41A77003136C6 /* IntentViewController.m */; };
+		6CC25E3A1ED41A77003136C6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CC25E381ED41A77003136C6 /* MainInterface.storyboard */; };
+		6CC25E3E1ED41A77003136C6 /* RXSiriExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CC25E301ED41A77003136C6 /* RXSiriExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CC25E411ED41A77003136C6 /* RXSiriExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CC25E261ED41A77003136C6 /* RXSiriExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CC25E4D1ED43BAA003136C6 /* RXINSendMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC25E4C1ED43BAA003136C6 /* RXINSendMessageHandler.m */; };
+		6CC25E531ED547AD003136C6 /* RXINSearchForPhotosHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC25E521ED547AD003136C6 /* RXINSearchForPhotosHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CC25E3C1ED41A77003136C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CC25E001ED419A4003136C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CC25E2F1ED41A77003136C6;
+			remoteInfo = RXSiriExtensionUI;
+		};
+		6CC25E3F1ED41A77003136C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CC25E001ED419A4003136C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CC25E251ED41A77003136C6;
+			remoteInfo = RXSiriExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CC25E481ED41A77003136C6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CC25E3E1ED41A77003136C6 /* RXSiriExtensionUI.appex in Embed App Extensions */,
+				6CC25E411ED41A77003136C6 /* RXSiriExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6CC25E081ED419A4003136C6 /* RXSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC25E0C1ED419A4003136C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CC25E0E1ED419A4003136C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CC25E0F1ED419A4003136C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CC25E111ED419A4003136C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6CC25E121ED419A4003136C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6CC25E151ED419A4003136C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CC25E171ED419A4003136C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CC25E1A1ED419A4003136C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CC25E1C1ED419A4003136C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CC25E261ED41A77003136C6 /* RXSiriExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RXSiriExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC25E281ED41A77003136C6 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		6CC25E291ED41A77003136C6 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		6CC25E2B1ED41A77003136C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CC25E301ED41A77003136C6 /* RXSiriExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RXSiriExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC25E321ED41A77003136C6 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		6CC25E351ED41A77003136C6 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		6CC25E361ED41A77003136C6 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		6CC25E391ED41A77003136C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6CC25E3B1ED41A77003136C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CC25E4B1ED43BAA003136C6 /* RXINSendMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXINSendMessageHandler.h; sourceTree = "<group>"; };
+		6CC25E4C1ED43BAA003136C6 /* RXINSendMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXINSendMessageHandler.m; sourceTree = "<group>"; };
+		6CC25E511ED547AD003136C6 /* RXINSearchForPhotosHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXINSearchForPhotosHandler.h; sourceTree = "<group>"; };
+		6CC25E521ED547AD003136C6 /* RXINSearchForPhotosHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXINSearchForPhotosHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CC25E051ED419A4003136C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC25E231ED41A77003136C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC25E2D1ED41A77003136C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC25E331ED41A77003136C6 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CC25DFF1ED419A4003136C6 = {
+			isa = PBXGroup;
+			children = (
+				6CC25E0A1ED419A4003136C6 /* RXSiri */,
+				6CC25E271ED41A77003136C6 /* RXSiriExtension */,
+				6CC25E341ED41A77003136C6 /* RXSiriExtensionUI */,
+				6CC25E311ED41A77003136C6 /* Frameworks */,
+				6CC25E091ED419A4003136C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CC25E091ED419A4003136C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CC25E081ED419A4003136C6 /* RXSiri.app */,
+				6CC25E261ED41A77003136C6 /* RXSiriExtension.appex */,
+				6CC25E301ED41A77003136C6 /* RXSiriExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CC25E0A1ED419A4003136C6 /* RXSiri */ = {
+			isa = PBXGroup;
+			children = (
+				6CC25E0E1ED419A4003136C6 /* AppDelegate.h */,
+				6CC25E0F1ED419A4003136C6 /* AppDelegate.m */,
+				6CC25E111ED419A4003136C6 /* ViewController.h */,
+				6CC25E121ED419A4003136C6 /* ViewController.m */,
+				6CC25E141ED419A4003136C6 /* Main.storyboard */,
+				6CC25E171ED419A4003136C6 /* Assets.xcassets */,
+				6CC25E191ED419A4003136C6 /* LaunchScreen.storyboard */,
+				6CC25E1C1ED419A4003136C6 /* Info.plist */,
+				6CC25E0B1ED419A4003136C6 /* Supporting Files */,
+			);
+			path = RXSiri;
+			sourceTree = "<group>";
+		};
+		6CC25E0B1ED419A4003136C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CC25E0C1ED419A4003136C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CC25E271ED41A77003136C6 /* RXSiriExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6CC25E281ED41A77003136C6 /* IntentHandler.h */,
+				6CC25E291ED41A77003136C6 /* IntentHandler.m */,
+				6CC25E4B1ED43BAA003136C6 /* RXINSendMessageHandler.h */,
+				6CC25E4C1ED43BAA003136C6 /* RXINSendMessageHandler.m */,
+				6CC25E511ED547AD003136C6 /* RXINSearchForPhotosHandler.h */,
+				6CC25E521ED547AD003136C6 /* RXINSearchForPhotosHandler.m */,
+				6CC25E2B1ED41A77003136C6 /* Info.plist */,
+			);
+			path = RXSiriExtension;
+			sourceTree = "<group>";
+		};
+		6CC25E311ED41A77003136C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CC25E321ED41A77003136C6 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CC25E341ED41A77003136C6 /* RXSiriExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				6CC25E351ED41A77003136C6 /* IntentViewController.h */,
+				6CC25E361ED41A77003136C6 /* IntentViewController.m */,
+				6CC25E381ED41A77003136C6 /* MainInterface.storyboard */,
+				6CC25E3B1ED41A77003136C6 /* Info.plist */,
+			);
+			path = RXSiriExtensionUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CC25E071ED419A4003136C6 /* RXSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC25E1F1ED419A4003136C6 /* Build configuration list for PBXNativeTarget "RXSiri" */;
+			buildPhases = (
+				6CC25E041ED419A4003136C6 /* Sources */,
+				6CC25E051ED419A4003136C6 /* Frameworks */,
+				6CC25E061ED419A4003136C6 /* Resources */,
+				6CC25E481ED41A77003136C6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CC25E3D1ED41A77003136C6 /* PBXTargetDependency */,
+				6CC25E401ED41A77003136C6 /* PBXTargetDependency */,
+			);
+			name = RXSiri;
+			productName = RXSiri;
+			productReference = 6CC25E081ED419A4003136C6 /* RXSiri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CC25E251ED41A77003136C6 /* RXSiriExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC25E451ED41A77003136C6 /* Build configuration list for PBXNativeTarget "RXSiriExtension" */;
+			buildPhases = (
+				6CC25E221ED41A77003136C6 /* Sources */,
+				6CC25E231ED41A77003136C6 /* Frameworks */,
+				6CC25E241ED41A77003136C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RXSiriExtension;
+			productName = RXSiriExtension;
+			productReference = 6CC25E261ED41A77003136C6 /* RXSiriExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6CC25E2F1ED41A77003136C6 /* RXSiriExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC25E421ED41A77003136C6 /* Build configuration list for PBXNativeTarget "RXSiriExtensionUI" */;
+			buildPhases = (
+				6CC25E2C1ED41A77003136C6 /* Sources */,
+				6CC25E2D1ED41A77003136C6 /* Frameworks */,
+				6CC25E2E1ED41A77003136C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RXSiriExtensionUI;
+			productName = RXSiriExtensionUI;
+			productReference = 6CC25E301ED41A77003136C6 /* RXSiriExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CC25E001ED419A4003136C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "https://github.com/srxboys";
+				TargetAttributes = {
+					6CC25E071ED419A4003136C6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PV5ANGHDB3;
+						ProvisioningStyle = Automatic;
+					};
+					6CC25E251ED41A77003136C6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PV5ANGHDB3;
+						ProvisioningStyle = Automatic;
+					};
+					6CC25E2F1ED41A77003136C6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PV5ANGHDB3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6CC25E031ED419A4003136C6 /* Build configuration list for PBXProject "RXSiri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CC25DFF1ED419A4003136C6;
+			productRefGroup = 6CC25E091ED419A4003136C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CC25E071ED419A4003136C6 /* RXSiri */,
+				6CC25E251ED41A77003136C6 /* RXSiriExtension */,
+				6CC25E2F1ED41A77003136C6 /* RXSiriExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CC25E061ED419A4003136C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC25E1B1ED419A4003136C6 /* LaunchScreen.storyboard in Resources */,
+				6CC25E181ED419A4003136C6 /* Assets.xcassets in Resources */,
+				6CC25E161ED419A4003136C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC25E241ED41A77003136C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC25E2E1ED41A77003136C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC25E3A1ED41A77003136C6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CC25E041ED419A4003136C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC25E131ED419A4003136C6 /* ViewController.m in Sources */,
+				6CC25E101ED419A4003136C6 /* AppDelegate.m in Sources */,
+				6CC25E0D1ED419A4003136C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC25E221ED41A77003136C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC25E4D1ED43BAA003136C6 /* RXINSendMessageHandler.m in Sources */,
+				6CC25E531ED547AD003136C6 /* RXINSearchForPhotosHandler.m in Sources */,
+				6CC25E2A1ED41A77003136C6 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC25E2C1ED41A77003136C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC25E371ED41A77003136C6 /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CC25E3D1ED41A77003136C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CC25E2F1ED41A77003136C6 /* RXSiriExtensionUI */;
+			targetProxy = 6CC25E3C1ED41A77003136C6 /* PBXContainerItemProxy */;
+		};
+		6CC25E401ED41A77003136C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CC25E251ED41A77003136C6 /* RXSiriExtension */;
+			targetProxy = 6CC25E3F1ED41A77003136C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CC25E141ED419A4003136C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CC25E151ED419A4003136C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CC25E191ED419A4003136C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CC25E1A1ED419A4003136C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6CC25E381ED41A77003136C6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CC25E391ED41A77003136C6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CC25E1D1ED419A4003136C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6CC25E1E1ED419A4003136C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CC25E201ED419A4003136C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PV5ANGHDB3;
+				INFOPLIST_FILE = RXSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ghs.app.RXSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CC25E211ED419A4003136C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PV5ANGHDB3;
+				INFOPLIST_FILE = RXSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ghs.app.RXSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6CC25E431ED41A77003136C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PV5ANGHDB3;
+				INFOPLIST_FILE = RXSiriExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ghs.app.RXSiri.RXSiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6CC25E441ED41A77003136C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PV5ANGHDB3;
+				INFOPLIST_FILE = RXSiriExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ghs.app.RXSiri.RXSiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6CC25E461ED41A77003136C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PV5ANGHDB3;
+				INFOPLIST_FILE = RXSiriExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ghs.app.RXSiri.RXSiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6CC25E471ED41A77003136C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PV5ANGHDB3;
+				INFOPLIST_FILE = RXSiriExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ghs.app.RXSiri.RXSiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC25E031ED419A4003136C6 /* Build configuration list for PBXProject "RXSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CC25E1D1ED419A4003136C6 /* Debug */,
+				6CC25E1E1ED419A4003136C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CC25E1F1ED419A4003136C6 /* Build configuration list for PBXNativeTarget "RXSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CC25E201ED419A4003136C6 /* Debug */,
+				6CC25E211ED419A4003136C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CC25E421ED41A77003136C6 /* Build configuration list for PBXNativeTarget "RXSiriExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CC25E431ED41A77003136C6 /* Debug */,
+				6CC25E441ED41A77003136C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CC25E451ED41A77003136C6 /* Build configuration list for PBXNativeTarget "RXSiriExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CC25E461ED41A77003136C6 /* Debug */,
+				6CC25E471ED41A77003136C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CC25E001ED419A4003136C6 /* Project object */;
+}

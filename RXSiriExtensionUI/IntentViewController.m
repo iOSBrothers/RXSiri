@@ -1,0 +1,50 @@
+//
+//  IntentViewController.m
+//  RXSiriExtensionUI
+//
+//  Created by srx on 2017/5/23.
+//  Copyright © 2017年 https://github.com/srxboys. All rights reserved.
+//
+
+#import "IntentViewController.h"
+
+// As an example, this extension's Info.plist has been configured to handle interactions for INSendMessageIntent.
+// You will want to replace this or add other intents as appropriate.
+// The intents whose interactions you wish to handle must be declared in the extension's Info.plist.
+
+// You can test this example integration by saying things to Siri like:
+// "Send a message using <myApp>"
+
+@interface IntentViewController ()
+
+@end
+
+@implementation IntentViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - INUIHostedViewControlling
+
+// Prepare your view controller for the interaction to handle.
+- (void)configureWithInteraction:(INInteraction *)interaction context:(INUIHostedViewContext)context completion:(void (^)(CGSize))completion {
+    // Do configuration here, including preparing views and calculating a desired size for presentation.
+    NSLog(@"%s", __FUNCTION__);
+    if (completion) {
+        completion([self desiredSize]);
+    }
+}
+
+- (CGSize)desiredSize {
+    NSLog(@"%s", __FUNCTION__);
+    return [self extensionContext].hostedViewMaximumAllowedSize;
+}
+
+@end
